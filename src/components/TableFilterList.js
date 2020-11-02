@@ -74,6 +74,7 @@ class TableFilterList extends React.Component {
 
     const filterChip = (index, data, colIndex) => (
       <Chip
+      id="filterListChip"
         label={filterListRenderers[index](data)}
         key={colIndex}
         onDelete={filterUpdate.bind(null, index, data, columnNames[index].name, 'chip')}
