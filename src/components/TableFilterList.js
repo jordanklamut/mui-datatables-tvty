@@ -56,6 +56,7 @@ class TableFilterList extends React.Component {
 
       return (
         <Chip
+          id="filterListChip"
           label={customFilterItem}
           key={customFilterItemIndex}
           onDelete={filterUpdate.bind(
